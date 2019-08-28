@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rapsodo</title>
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <section>
+      <div class="outside">
+          <div class="row">
+            <div class="col">
+              <video id="sampleVideo">
+                <source src="assets/video/sampleVideo2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <img src="assets/img/logoD.png" alt="Logo">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="distanceId" style="font-size:30px">
+                    {{ distanceId }} <span>METERS</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="attribute">
+                    DISTANCE
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="ballSpeedId" style="font-size:30px">
+                    {{ ballSpeedId }} <span>KM/H</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="attribute">
+                    BALL SPEED
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="launchAngleId" style="font-size:30px">
+                    {{ launchAngleId }}  <span>O</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="attribute">
+                    LAUNCH ANGLE
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="clubSpeedId" style="font-size:30px">
+                    {{ clubSpeedId }} <span>KM/H</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="attribute">
+                    CLUB SPEED
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <button type="button" onclick="videoPlay()">Play Video!</button>
+  </body>
+  <script src="js/script.js"></script>
+</html>
